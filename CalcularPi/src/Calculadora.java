@@ -15,7 +15,7 @@ public class Calculadora {
         }
         System.out.println(pi);
     }
-    public void chegarValor(String valor){
+    public void chegarValor(){
         pi = 4;
         base = 3;
         for (int i = 0; i < (200000/2)-1; i++) {
@@ -24,7 +24,7 @@ public class Calculadora {
             pi+= ((double) 4 /base);
             base+=2;
             piString = String.valueOf(pi);
-            if(piString.startsWith(valor)){
+            if(piString.startsWith("3,14159")){
                 System.out.println(i);
                 break;
             }
